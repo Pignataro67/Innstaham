@@ -31,5 +31,8 @@ class ApplicationController < ActionController::Base
     def authorization?
       current_user.id == params[:id].to_i
     end
+
+    def authorized_on_picture
+      current_user.id == params[:user_id].to_i
+    end
   end
-end
