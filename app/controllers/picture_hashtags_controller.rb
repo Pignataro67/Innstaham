@@ -1,0 +1,2 @@
+class PictureHashtagsController < ApplicationController
+end
