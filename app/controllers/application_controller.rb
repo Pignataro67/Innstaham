@@ -35,4 +35,9 @@ class ApplicationController < ActionController::Base
     def authorized_on_picture
       current_user.id == params[:user_id].to_i
     end
+
+    def current_user_follows?
+      @user = User.find(params[:id])
+      current_user.followees.include?(@user)
+    end
   end
