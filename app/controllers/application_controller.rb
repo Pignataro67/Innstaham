@@ -40,4 +40,29 @@ class ApplicationController < ActionController::Base
       @user = User.find(params[:id])
       current_user.followees.include?(@user)
     end
+
+    def hashtag_check(content)
+      hashtag = []
+      #final hashtag array
+      array1 = content.split(" ")
+      #split content by space
+      array2 = array1.select{|element| element.include?("#")}
+      #all the word has the #
+      array3 = []
+      #all the word has the # not at the beginning
+      array2.each{|element|
+        if element[0] == "#"
+          hashtag << element
+        else
+          array3 << element
+        end
+      }
+      array4 = []
+      array3.map!{|element| array4 << element.split("#").flatten.drop(1)}
+      array4.flatten!
+    
+      hashtag << array4.map{|element| element = "#" + element}
+    
+      @content_hashtags = hashtag.flatten!
+    end
   end
