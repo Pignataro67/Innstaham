@@ -65,4 +65,16 @@ class ApplicationController < ActionController::Base
     
       @content_hashtags = hashtag.flatten!
     end
+
+    def find_or_create_by
+      @content_hashtags.each do |element|
+        @hashtag = Hashtag.find_or_create_by(hashtag: element)
+        PictureHashtag.create(hashtag_id: @hashtag.id, picture_id: params[:picture_id])
+      end
+    end
+
+    def search_by_hashtag(hashtag)
+      hashtag = "#" + hashtag
+      @hashtag = Hashtag.find_by(hashtag: hashtag)
+    end
   end
