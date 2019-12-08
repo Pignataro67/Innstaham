@@ -1,7 +1,7 @@
 class HashtagsController < ApplicationController
 
   def search
-end
+  end
   
   def search_result
   
