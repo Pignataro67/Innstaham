@@ -10,5 +10,15 @@
       <%= link_to "Sign Up", new_user_path,:class => "not_logged_in sign enter"  %>
     </div>
   </div>
+  <% else %>
+<div class="centering_container">
 
+  <% if @current_user.followees.count == 0  %>
+    <div class="empty_feed">
+
+        <p class="sorry red">Sorry!</p>
+
+      <p class="empty_feed_inner_message">You don't follow anyone yet! Click <%= link_to "here", discover_path, class: "link"%> to discover some users to follow. 🎄  </p>
+
+    </div>
 </div> <!-- page_container -->
