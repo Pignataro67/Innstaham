@@ -1,15 +1,21 @@
 <div class="page_container">
 
+
+
+
+<% if @current_user == nil %>
+
   <div class="register_container">
 
     <div class="enter log">
       <%= link_to "Log In", new_session_path, :class => "not_logged_in log enter" %>
     </div>
-
     <div class="enter ">
       <%= link_to "Sign Up", new_user_path,:class => "not_logged_in sign enter"  %>
-    </div>
-  </div>
+
+      </div>
+
+      </div>
   <% else %>
 <div class="centering_container">
 
@@ -19,6 +25,11 @@
         <p class="sorry red">Sorry!</p>
 
       <p class="empty_feed_inner_message">You don't follow anyone yet! Click <%= link_to "here", discover_path, class: "link"%> to discover some users to follow. 🎄  </p>
+      
+      </div>
+
+      <% else %>
+
       <div class="index_post_container">
       <% @pic.take(20).each do |pic| %>
     
