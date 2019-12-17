@@ -7,7 +7,6 @@
     background-color: white;
     background: rgba(255,255,255, 0.5);
     border-radius: 20px;
-  
   }
   
   .show_picture_container {
@@ -57,7 +56,6 @@
   .picture_container {
     display: flex;
     flex-wrap: wrap-reverse;
-    // justify-content: flex-start;
     padding-left: 7%;
   }
   
@@ -75,7 +73,6 @@
   
   .index_pictures {
     max-width: 100%;
-    // margin: auto;
     max-height: 100%;
     border-radius: 5%;
     margin: 2px 5px 10px 5px;
@@ -120,7 +117,6 @@
     flex-wrap: wrap-reverse;
     justify-content: flex-end;
     justify-content: space-around;
-    // flex: 0 1 calc(25% - 30px);
     width: 100%;
   }
 
