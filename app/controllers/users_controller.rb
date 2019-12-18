@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   
   def create
     @user = User.new(user_params(:name, :username, :password, :password_confirmation))
-    @user.set_img_url
+    # @user.set_img_url
     if @user.save
       session[:user_id] = @user.id
       redirect_to @user
