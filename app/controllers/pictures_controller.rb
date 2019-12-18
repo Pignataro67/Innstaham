@@ -7,11 +7,8 @@ class PicturesController < ApplicationController
   end
   
   def create
-  #picturecaptionshtml
     @user = User.find(params[:user_id])
-  # byebug
     @picture = Picture.new(description: params[:picture][:description], img_url: params[:picture][:img_url], user_id: params[:user_id])
-  
     if @picture.save
       hashtag_check(@picture.description)
       @content_hashtags.each do |element|
@@ -61,6 +58,5 @@ class PicturesController < ApplicationController
   def set_picture
     @user = User.find(params[:user_id])
     @picture = Picture.find(params[:id])
-  
   end
 end

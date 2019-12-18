@@ -4,7 +4,6 @@ class HashtagsController < ApplicationController
   end
   
   def search_result
-  
     if @hashtag = search_by_hashtag(params[:hashtag][:hashtag])
       @pictures = @hashtag.pictures
     else  
