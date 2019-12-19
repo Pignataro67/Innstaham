@@ -4,11 +4,11 @@
 
 .user_profile_pic {
     border: 1px, solid, blue;
-    border-radius: 50%;
+    border-radius: 45%;
     width: 100px;
     height: 100px;
     float: left;
-    padding: 5px 5px 5px 5px;
+    padding: 10px 10px 10px 5px;
     text-align: center;
     font-weight: bold;
   }
@@ -48,14 +48,14 @@
   
   .user_top {
     background-color: white;
-    border-radius: 15px;
+    border-radius: 20px;
     background: rgba(255,255,255, 0.25);
     padding: 15px 0px;
   }
   
   .show_bio {
     text-align: center;
-    padding: 40px 0 40px;
+    padding: 20px 0 20px;
     font-style: italic;
   }
   
