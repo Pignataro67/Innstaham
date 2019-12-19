@@ -53,7 +53,16 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.all
+    @current_user = current_user
+    if @current_user
+      @followees = current_user.followees
+      @pic = []
+      @followees.each do |followee|
+        @pic << followee.pictures
+      end
+      @pic.flatten!
+      @pic.sort_by! {|pic| pic.created_at}
+    end
   end
 
   def destroy
@@ -62,6 +71,13 @@ class UsersController < ApplicationController
 
   def redirect
     redirect_to session[:previous_url]
+  end
+
+  def discover
+    @users = User.all
+    # @users = User.all.select do |user|
+    #   user.id != find_current_user.id
+    # end
   end
 
   private
