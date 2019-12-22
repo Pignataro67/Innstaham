@@ -151,8 +151,8 @@
 
 .red {
  color: red;
- margin-bottom: 10px ;
- padding-top: 10px;
+ margin-bottom: 20px ;
+ padding-top: 15px;
 }
 
 .inner_message {
@@ -179,7 +179,7 @@
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
- padding: 60px;
+ padding: 50px;
 }
 
 .form {
@@ -201,12 +201,12 @@
 #password {
  width: 90%;
  border-radius: 5px;
- padding: 10px;
+ padding: 20px;
 }
 
 .search {
  width: 90%;
- margin: 10px 0px;
+ margin: 20px 0px;
  margin-left: 20px;
  color: #099220;
  font-family: TimesNewRoman;
