@@ -44,11 +44,11 @@
 }
 
 .sign:hover {
- color: red;
+ color: green;
 }
 
 .log:hover {
-  color: green;
+  color: red;
 }
 
 .nav {
@@ -61,7 +61,7 @@
 }
 
 .nav:hover {
- color: red;
+ color: green;
 }
 
 .navigation_and_logo {
@@ -84,7 +84,7 @@
 }
 
 .logo:hover {
-  color:green;
+  color:red;
 }
 
 .header_text {
@@ -150,8 +150,8 @@
 }
 
 .red {
- color: green;
- margin-bottom: 8px ;
+ color: red;
+ margin-bottom: 10px ;
  padding-top: 10px;
 }
 
@@ -172,7 +172,7 @@
 }
 
 .link:hover {
- color:red;
+ color:green;
 }
 
 .form_container {
