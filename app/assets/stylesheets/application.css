@@ -54,7 +54,7 @@
 .nav {
  text-decoration: none;
  margin-top: 50px;
- font-family: TimesNewRoman;
+ font-family: SnapsTasteChristmas;
  color: white;
  font-weight: bold;
  font-size: 18px;
@@ -133,7 +133,7 @@
 
 .message {
  margin: 20px 0px;
- font-family: TimesNewRoman;
+ font-family: SnapsTasteChristmas;
  font-size: 30px;
  color: white;
  text-align: center;
@@ -142,7 +142,7 @@
 
 .empty_feed {
  margin: 20px 0px;
- font-family: TimesNewRoman;
+ font-family: SnapsTasteChristmas;
  font-size: 30px;
  color: white;
  text-align: center;
@@ -151,18 +151,18 @@
 
 .red {
  color: red;
- margin-bottom: 15px ;
- padding-top: 20px;
+ margin-bottom: 8px ;
+ padding-top: 10px;
 }
 
 .inner_message {
- margin-top: 10px ;
- padding-bottom: 15px
+ margin-top: 8px ;
+ padding-bottom: 10px;
 }
 
 .empty_feed_inner_message {
  padding: 20px 15px;
- margin-top: 10px;
+ margin-top: 5px;
 }
 
 .link {
@@ -179,17 +179,17 @@
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
- padding: 45px;
+ padding: 60px;
 }
 
 .form {
- padding-bottom: 35px;
+ padding-bottom: 20px;
 }
 
 #hashtag_hashtag {
  width: 90%;
  border-radius: 5px;
- padding: 25px;
+ padding: 10px;
 }
 
 #username {
@@ -201,15 +201,15 @@
 #password {
  width: 90%;
  border-radius: 5px;
- padding: 20px;
+ padding: 10px;
 }
 
 .search {
  width: 90%;
- margin: 20px 0px;
+ margin: 10px 0px;
  margin-left: 20px;
  color: #099220;
- font-family: TimesNewRoman;
+ font-family: SnapsTasteChristmas;
  font-size: 35px;
 }
 
