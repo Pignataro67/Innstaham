@@ -31,7 +31,7 @@
 }
 
 .not_logged_in {
-  font-family: TimesNewRoman;
+  font-family: SnapsTasteChristmas;
   font-size: 55px;
   color: white;
   font-weight: bold;
@@ -76,7 +76,7 @@
 
 .logo {
   display: inline-block;
-  font-family: TimesNewRoman;
+  font-family: SnapsTasteChristmas;
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -88,7 +88,7 @@
 }
 
 .header_text {
- font-family: TimesNewRoman;
+ font-family: SnapsTasteChristmas;
  font-size: 30px;
  color: white;
  text-align: center;
@@ -151,17 +151,17 @@
 
 .red {
  color: red;
- margin-bottom: 8px ;
+ margin-bottom: 8px;
  padding-top: 10px;
 }
 
 .inner_message {
- margin-top: 8px ;
+ margin-top: 8px;
  padding-bottom: 10px;
 }
 
 .empty_feed_inner_message {
- padding: 20px 15px;
+ padding: 20px 10px;
  margin-top: 5px;
 }
 
