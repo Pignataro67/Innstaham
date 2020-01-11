@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Icon.create(icon:"🎅🏿")
+Icon.create(icon:"🎅🏿")##Bells
 Icon.create(icon:"☃️")
-Icon.create(icon:"🎄")
+Icon.create(icon:"🎄") ##Christmas Tree
 Icon.create(icon:"❄️")
 Icon.create(icon:"🦌")

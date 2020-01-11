@@ -18,7 +18,6 @@ class ApplicationController < ActionController::Base
     def index
     end
 
-
     def current_user
       if session[:user_id] == nil
         # redirect_to users_path
