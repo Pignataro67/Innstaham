@@ -22,6 +22,9 @@ class User < ApplicationRecord
   end
 
   def set_img_url
-    self.img_url.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'snowflake.png')), filename: 'snowflake.png', content_type: 'image/png')	    
+    img_url.attach(
+      io: File.open(Rails.root.join('app', 'assets', 'images', 'snowflake.png')), 
+      filename: 'snowflake.png', content_type: 'image/png'
+    )	    
   end	 
 end

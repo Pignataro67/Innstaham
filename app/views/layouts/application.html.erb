@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', "data-turbolinks-track": 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -35,8 +35,6 @@
   <% end %>
 
 </div>
-
-<%= video_tag('snow_falling.mp4', class: "myVideo", loop: true, autoplay: true) %>
 
     <%= yield %>
   </body>
