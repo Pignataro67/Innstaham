@@ -43,19 +43,11 @@
  text-align: center;
 }
 
-.sign:hover {
- color: green;
-}
-
-.log:hover {
-  color: red;
-}
-
 .nav {
  text-decoration: none;
  margin-top: 50px;
  font-family: SnapsTasteChristmas;
- color: white;
+ color: black;
  font-weight: bold;
  font-size: 18px;
 }
@@ -78,14 +70,10 @@
   display: inline-block;
   font-family: SnapsTasteChristmas;
   text-decoration: none;
-  color: white;
   font-weight: bold;
   font-size: 80px;
 }
 
-.logo:hover {
-  color:red;
-}
 
 .header_text {
  font-family: SnapsTasteChristmas;
@@ -135,9 +123,13 @@
  margin: 20px 0px;
  font-family: SnapsTasteChristmas;
  font-size: 30px;
- color: white;
+ color: black;
  text-align: center;
  font-weight: bold;
+}
+
+.user_input {
+  margin-bottom: 16px;
 }
 
 .empty_feed {
@@ -177,8 +169,10 @@
 
 .form_container {
  display: flex;
+ flex-direction: column;
  flex-wrap: wrap;
- justify-content: center;
+ max-width: 180px;
+ /* justify-content: center; */
  padding: 60px;
 }
 

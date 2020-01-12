@@ -23,7 +23,7 @@ class ApplicationController < ActionController::Base
         # redirect_to users_path
         return nil
       else
-      @current_user = User.find(session[:user_id])
+      @current_user ||= User.find(session[:user_id])
       end
     end
 
