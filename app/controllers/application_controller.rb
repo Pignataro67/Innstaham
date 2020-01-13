@@ -14,7 +14,6 @@ class ApplicationController < ActionController::Base
       @last_page = session[:previous_url]
     end
 
-
     def index
     end
 
