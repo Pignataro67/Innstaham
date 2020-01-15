@@ -5,14 +5,14 @@
 .centering_container {
     margin: 2% 20%;
     background-color: red;
-    background: rgba(255,255,255, 0.5);
+    background: blue;
     border-radius: 20px;
   }
   
   .show_picture_container {
     margin: 2% 20%;
     background-color: red;
-    background: rgba(255,255,255, 0.5);
+    background: blue;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -108,7 +108,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 3px;
-    color: dimgrey;
+    color: blue;
     font-family: Palatino;
   }
   
