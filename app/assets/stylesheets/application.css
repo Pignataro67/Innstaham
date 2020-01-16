@@ -127,10 +127,6 @@
  font-weight: bold;
 }
 
-.user_input {
-  margin-bottom: 16px;
-}
-
 .empty_feed {
  margin: 20px 0px;
  font-family: SnapsTasteChristmas;
@@ -141,7 +137,7 @@
 }
 
 .red {
- color: green;
+ color: red;
  margin-bottom: 8px;
  padding-top: 10px;
 }
