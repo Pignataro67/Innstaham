@@ -8,17 +8,21 @@
 
   <div class="show_stats_and_buttons">
   <div class="user_stats">
+
     <div class="show_posts">
       Posts: <%= @user.pictures.length %>
     </div>
+
     <div class="show_followers">
       <%= link_to "Followers:", followers_path, class: "link" %>
       <%= @user.followers.length %>
     </div>
+
     <div class="show_followees">
       <%= link_to "Following:", followees_path, class: "link"  %>
         <%= @user.followees.length %>
     </div>
+    
   </div>
 
 <div class="show_button">
